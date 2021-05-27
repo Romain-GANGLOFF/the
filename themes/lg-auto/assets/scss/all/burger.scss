@@ -1,0 +1,92 @@
+#Burger {
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    left: 20px;
+    position: absolute;
+    top: calc(40px - 11px);
+    width: 25px;
+    z-index: 99;
+    transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    -webkit-transition: .5s ease-in-out;
+    span{
+        background: white;
+        border-radius: 9px;
+        display: block;
+        height: 3px;
+        left: 0;
+        opacity: 1;
+        position: absolute;
+        width: 100%;
+        transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        -webkit-transition: .25s ease-in-out;
+    }
+}
+#Burger span:nth-child(1) {
+    top: 0px;
+    transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
+#Burger span:nth-child(2) {
+    top: 9px;
+    transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
+#Burger span:nth-child(3) {
+    top: 18px;
+    transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    -webkit-transform-origin: left center;
+}
+#Burger.open span:nth-child(1) {
+    left: 0px;
+    top: 0px;
+    transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+#Burger.open span:nth-child(2) {
+    opacity: 0;
+    width: 0%;
+}
+#Burger.open span:nth-child(3) {
+    left: 0px;
+    top: 18px;
+    transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+
+// TABLETTE
+@media only screen and ( min-width: 768px ) and ( min-height: 600px){
+    #Burger{
+        left: 60px;
+        top: calc(60px - 11px);
+    }
+}
+
+// ECRAN 720P
+@media only screen and ( min-width: 1280px ) {
+    #Burger{
+        display: none;
+    }
+}

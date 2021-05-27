@@ -1,0 +1,177 @@
+// Color
+$red: #f92231;
+$black: #181818;
+$grey: #636363;
+
+// Font RobotoCondensed
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../font/RobotoCondensed-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: 'RobotoBoldI';
+    src: url(../font/RobotoCondensed-BoldItalic.woff) format('woff');
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/RobotoCondensed-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'RobotoI';
+    src: url(../font/RobotoCondensed-Italic.woff) format('woff');
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(../font/RobotoCondensed-Light.woff) format('woff');
+}
+@font-face {
+    font-family: 'RobotoLightI';
+    src: url(../font/RobotoCondensed-LightItalic.woff) format('woff');
+}
+
+//Font smart
+@font-face {
+    font-family: 'smartBold';
+    src: url(../font/smart/SmartCourierEUR-Bold.woff);
+}
+@font-face {
+    font-family: 'smartMedium';
+    src: url(../font/smart/SmartCourierEUR-Medium.woff);
+}
+@font-face {
+    font-family: 'smartRegular';
+    src: url(../font/smart/SmartCourierEUR-Regular.woff);
+}
+
+//Font Indian
+
+
+@font-face {
+    font-family: 'Indian';
+    src: url(../font/Indian/HobokenSans.woff);
+}
+
+
+//Font Mercedes
+@font-face {
+    font-family: 'MercedesBold';
+    src: url(../font/Mb/MBCorpoSText-Bold.woff);
+}
+@font-face {
+    font-family: 'MercedesLight';
+    src: url(../font/Mb/MBCorpoSText-Light.woff);
+}
+@font-face {
+    font-family: 'MercedesMedium';
+    src: url(../font/Mb/MBCorpoSText-Medium.woff);
+}
+
+@font-face {
+    font-family: 'MercedesTitre';
+    src: url(../font/Mb/MBCorpoATitle-Regular.woff);
+}
+
+
+
+//Font Jeep
+@font-face {
+    font-family: 'JeepBold';
+    src: url(../font/Jeep/DINNextLTPro-Bold.woff);
+}
+@font-face {
+    font-family: 'JeepMedium';
+    src: url(../font/Jeep/DINNextLTPro-Medium.woff);
+}
+@font-face {
+    font-family: 'JeepRegular';
+    src: url(../font/Jeep/DINNextLTPro-Regular.woff);
+}
+
+// Font InriaSans
+@font-face {
+    font-family: 'InriaSansBold';
+    src: url(../font/InriaSans-Bold.woff) format('woff');
+}
+@font-face {
+    font-family: 'InriaSansBoldI';
+    src: url(../font/InriaSans-BoldItalic.woff) format('woff');
+}
+@font-face {
+    font-family: 'InriaSans';
+    src: url(../font/InriaSans-Regular.woff) format('woff');
+}
+@font-face {
+    font-family: 'InriaSansI';
+    src: url(../font/InriaSans-Italic.woff) format('woff');
+}
+@font-face {
+    font-family: 'InriaSansLight';
+    src: url(../font/InriaSans-Light.woff) format('woff');
+}
+@font-face {
+    font-family: 'InriaSansLightI';
+    src: url(../font/InriaSans-LightItalic.woff) format('woff');
+}
+// Background-color
+$color-greys: #d3d3d3;
+$color-colab: rgba(46,46,46,0.702);
+// NEW COLOR
+$black-active: #313335;
+$white: #eceff1;
+$blue-light: #86c6ef;
+//gradient
+$black-light:#485258;
+$black-dark:#30383c;
+$active-light: #485258;
+$active-dark: #30383c;
+//color shadow
+$purple-shadow2: #311d47;
+$blue-shadow: #618398;
+// Color
+$font-grey: #515151;
+// Shadow
+$shadow1:  0px 10px 7px -9px rgba(147, 151, 157, 0.1);;
+$shadow2:  5px 8.66px 21.25px 3.75px rgba(63, 63, 63, 0.2);
+$shadow3:  0px 0px 5px 2px rgba(147,147,147,0.5);
+$insetShadow: inset 0px 0px 7px 1px rgba(150,14,2,1);
+//border
+$border-menu: 1px solid $font-grey;
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+@keyframes turn {
+    from {transform:rotateY(0deg);}
+    to {transform:rotateY(360deg);}
+}
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

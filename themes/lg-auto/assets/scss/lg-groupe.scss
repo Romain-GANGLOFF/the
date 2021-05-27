@@ -1,0 +1,899 @@
+// sass --watch scss/lg-groupe.scss:css/lg-groupe.css --style compressed
+// IPHONE
+// @media only screen and ( min-width: 375px ) {}
+
+// IPHONE LANDSCAPE
+// @media only screen and ( min-width: 567px ) and ( max-height: 400px ) {} 
+
+// TABLETTE
+// @media only screen and ( min-width: 768px ) and ( min-height: 600px) {}
+
+// TABLETTE LANDSCAPE
+// @media only screen and ( min-width: 1024px ) and ( min-height: 768px) {}
+
+// IPAD PRO
+// @media only screen and ( min-width: 1024px ) and ( min-height: 1300px) {}
+
+// ECRAN 720P
+// @media only screen and ( min-width: 1280px ){}
+
+// MACBOOK + IPAD PRO LANDSCAPE
+// @media only screen and ( min-width: 1366px ) {}
+
+// ECRAN PC PORTABLE
+// @media only screen and ( min-width: 1440px ) {}
+
+// MAC DE MERDE
+// @media
+// only screen and (-webkit-min-device-pixel-ratio: 2)      and (min-width: 1440px),
+// only screen and (   min--moz-device-pixel-ratio: 2)      and (min-width: 1440px),
+// only screen and (     -o-min-device-pixel-ratio: 2/1)    and (min-width: 1440px),
+// only screen and (        min-device-pixel-ratio: 2)      and (min-width: 1440px),
+// only screen and (                min-resolution: 192dpi) and (min-width: 1440px),
+// only screen and (                min-resolution: 2dppx)  and (min-width: 1440px){}
+
+// ECRAN CLASSIC 1080P
+// @media only screen and ( min-width: 1920px ) {}
+
+// ECRAN MAC RETINA
+// @media only screen and ( min-width: 2560px ) {}
+@import 'all/variable';
+.site-main-groupe{
+    position: relative;
+    z-index: 1;
+    h3{
+        font-style: italic;
+        font-family: 'InriaSans';
+        font-weight: 500;
+        line-height: 1.273;
+    }
+    .banniere_header{
+        .hidden-title{
+            color: #181818;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .banniere{
+            position: relative;
+            z-index: 1;
+            .thumbnails{
+                background-size: 338%;
+            }
+            .menu-banniere{
+                display: none;
+            }
+            .button-mobile{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $red;
+                width: 100%;
+                border: none;
+                border-top-left-radius: 50px; 
+                border-top-right-radius: 50px; 
+                a{
+                    font-family: 'InriaSans';
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                }
+            }      
+        }
+    }
+    #About{
+        background-image: url(../imgs/lg_group/visuel\ voiture.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 50px 20px;
+        position: relative;
+        height: 440px;
+        h2{
+            position: relative;
+            padding-bottom: 25px;
+            &::before{
+                content: '';
+                background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+                position: absolute;
+                top: 55px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 9px;
+                width: 90px;
+            }
+        }
+        // &::after{
+        //     content: '';
+        //     background-image: url(../icons/other/TUBE_LUEUR_ROUGE.png);
+        //     position: absolute;
+        //     bottom: -15px;
+        //     left: 50%;
+        //     transform: translateX(-50%);
+        //     background-size: contain;
+        //     background-position: center;
+        //     background-repeat: no-repeat;
+        //     height: 175px;
+        //     width: 50px;
+        // }
+    }
+    #WhoLG{
+        background-image: url(../imgs/lg_group/FOND\ OCCASIONS.png);
+        background-position: bottom;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        h3{
+            margin: 10px 0 25px;
+            padding: 0 30px;
+            text-align: center;
+        }
+        .wp-block-media-text{
+            .wp-block-media-text__content{
+                padding: 50px 20px 75px;
+                p{
+                    margin-bottom: 50px;
+                }
+                .wp-block-image{
+                    padding: 0 25px;
+                    figure{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        p{
+            text-align: center;
+            margin: 0;
+        }
+        .wp-block-image{
+            margin-bottom: 0;
+        }
+        &::before{
+            content: '';
+            background-image: url(../icons/other/TUBE_LUEUR_ROUGE_M.png);
+            position: absolute;
+            bottom: -62px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 103px;
+            width: 51px;
+        }
+    }
+    #Business{
+        position: relative;
+        z-index: 2;
+        &::before{
+            content: '';
+            z-index: -1;
+            background-image: url('../imgs/home/ARRIÈRE_MOTO.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 235px;
+            height: 370px;
+            position: absolute;
+            top: 0;
+            left: -30px;
+            
+        }
+        &::after{
+            content: '';
+            background-image: url(../icons/other/TUBE_LUEUR_ROUGE_M.png);
+            position: absolute;
+            bottom: -63px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 103px;
+            width: 51px;
+        }
+        h3{
+            margin: 50px 0;
+        }
+        p{
+            text-align: center;
+        }
+        .wp-block-media-text#reverse{
+            .wp-block-media-text__content{
+                background-image: none;
+                padding: 0 20px 50px;
+                grid-row: 1;
+                p{
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .wp-block-media-text__media{
+                grid-row: 2;
+            }
+        }
+        .wp-block-media-text{
+            .wp-block-media-text__content{
+                padding: 50px 20px 75px;
+                background-image: url(../imgs/header_footer/FOND_MENU.jpg);
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-position: bottom;
+                p{
+                    margin-top: 0;
+                    margin-bottom: 25px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+                ul{
+                    display: none;
+                }
+            }
+        }
+        .container{
+            padding: 0 50px;
+            .swiper-container{
+                .swiper-wrapper{
+                    align-items: center;
+                    .swiper-slide{
+                        margin-bottom: 30px;
+                        .container-slide{
+                            .contain-shadow{
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+                .swiper-pagination-brands{
+                    bottom: 50px;
+                    .swiper-pagination-bullet{
+                        border-radius: 15px;
+                        background: #0f0f10;
+                        box-shadow: inset 1px 1px 5px #060606,
+                                    inset -1px -1px 5px #18181a;
+                        width: 10px;
+                        height: 10px;
+                        opacity: 1;
+                    }
+                    .swiper-pagination-bullet-active{
+                        position: relative;
+                        &::after{
+                            content: "";
+                            position: absolute;
+                            height: 5px;
+                            width: 5px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-50%);
+                            border-radius: 15px;
+                            background: linear-gradient(145deg, #ff3941, #db3037);
+                            box-shadow:  0px 0px 8px #611518,
+                                        -0px -0px 8px #ff5562;
+                        }
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev{
+                    &::after{
+                        color : #bfbfbf;
+                        font-size: 15px;
+                    }
+                }
+                .swiper-button-next{
+                    right: 0;
+                }
+                .swiper-button-prev{
+                    left: 0;
+                }
+            }
+        }
+    }
+    #Coffee{
+        padding: 50px 20px 75px;
+        position: relative;
+        h3{
+            margin-bottom: 50px;
+        }
+        p{
+            text-align: center;
+        }
+        .wp-block-media-text{
+            .wp-block-media-text__media{
+                margin-bottom: 50px;
+                padding: 0 25px;
+
+            }
+            .wp-block-media-text__content{
+                padding: 0;
+                p{
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+                p:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+    #Premium{
+        padding: 50px 20px;
+        background-image: url(../imgs/lg_group/FOND_PREMIUM.png);
+        background-repeat: no-repeat;
+        position: relative;
+        // background-size: contain;
+        h3{
+            margin-bottom: 50px;
+        }
+        
+        .wp-block-media-text{
+            position: relative;
+            .wp-block-media-text__media{
+                margin-bottom: 50px;
+                padding: 0 25px;
+            }
+            .wp-block-media-text__content{
+                padding: 0;
+                margin-bottom: 30px;
+                p{
+                    margin: 30px 0;
+                    &:first-child{
+                        margin-top: 0;
+                    }
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            &::before{
+                content:"";
+                position: absolute;
+                width: 100%;
+                height: 19px;
+                bottom: 0;
+                left: 0;
+                background: url(../icons/other/LIGHT_TOP.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        p{
+            text-align: center;
+            margin: 50px 0;
+        }
+        .wp-block-gallery{
+            margin: 0;
+            ul{
+                flex-direction: column;
+                align-items: center;
+                li{
+                    margin: 0 0 50px;
+                    width: 150px;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &::before{
+            content: '';
+            background-image: url(../icons/other/TUBE_LUEUR_ROUGE_M.png);
+            position: absolute;
+            top: -39px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 103px;
+            width: 51px;
+        }
+    }
+    
+    // IPHONE X
+    @media only screen and (min-width: 375px) and (min-height: 812px){
+        .banniere_header{
+            .banniere{
+                .thumbnails{
+                    background-size: cover;
+                }
+            }
+        }
+    }
+    
+    // IPHONE LANDSCAPE
+    @media only screen and ( min-width: 567px ) and ( max-height: 450px ) {
+        .banniere_header{
+            .banniere{
+                .thumbnails{
+                    background-size: 195%;
+                    background-position: bottom;
+                }
+            }
+        }
+        #About{
+            height:400px;
+            padding: 50px 60px;
+        }
+        #WhoLG{
+            .wp-block-media-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .wp-block-media-text__media{
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 50px 60px 75px;
+                    p{
+                        margin-bottom: 50px;
+                    }
+                    .wp-block-image{
+                        align-self: center;
+                    }
+                }
+            }
+        }
+        #Business{
+            .wp-block-media-text#reverse{
+                flex-direction: column-reverse;
+                .wp-block-media-text__content{
+                    padding: 0 120px 50px;
+                    p{
+                        margin-top: 0;
+                        margin-bottom: 25px;
+                    }
+                    p:last-child{
+                        margin-bottom: 0;
+                    }
+                } 
+            }
+            .wp-block-media-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .wp-block-media-text__media{
+                    padding: 0 120px;
+                    width: 100%;
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    padding: 50px 120px 75px;
+                    p{
+                        margin-top: 0;
+                        margin-bottom: 25px;
+                    }
+                    p:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        #Coffee{
+            padding: 50px 120px 75px;
+            .wp-block-media-text{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .wp-block-media-text__media{
+                    align-self: center;
+                };
+            }
+        }
+        #Premium{
+            padding: 50px 120px;
+            .wp-block-media-text{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                &::before{
+                    height: 38px;
+                }
+                .wp-block-media-text__media{
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    // TABLETTE  
+    @media only screen and ( min-width: 768px ) and ( min-height: 600px) {
+        .banniere_header{
+            .banniere{
+                height: calc(100vh - 120px);
+            }
+        }
+        #About{
+            height:345px;
+            padding: 50px 70px;
+        }
+        #WhoLG{
+            padding: 0 70px 75px;
+            .wp-block-media-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .wp-block-media-text__media{
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 0;
+                    p{
+                        margin: 50px 0;
+                    }
+                    .wp-block-image{
+                        align-self: center;
+                    }
+                }
+            }
+        }
+        #Business{
+            background-image: url(../imgs/lg_group/FOND\ OCCASIONS.png);
+            background-position: bottom;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            .wp-block-media-text{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .wp-block-media-text__media{
+                    padding: 50px 70px 0;
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    background: none;
+                    padding: 50px 70px 75px;
+                    p{
+                        margin-top: 0;
+                        margin-bottom: 25px;
+                    }
+                    p:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .wp-block-media-text#reverse{
+                flex-direction: column-reverse;
+                .wp-block-media-text__content{
+                    padding: 0 70px;
+                }
+                .wp-block-media-text__media{
+                    padding-bottom: 50px;
+                }
+            }
+            .container{
+                padding: 0 110px;
+            }
+
+        }
+        #Coffee{
+            padding: 50px 70px 75px;
+            .wp-block-media-text{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                .wp-block-media-text__media{
+                    align-self: center;
+                };
+            }
+        }
+        #Premium{
+            padding: 50px 70px;
+            .wp-block-media-text{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                &::before{
+                    height: 32px;
+                }
+                .wp-block-media-text__media{
+                    align-self: center;
+                }
+                .wp-block-media-text__content{
+                    margin-bottom: 50px;
+                }
+                &#reverse{
+                    .wp-block-media-text{
+                        padding: 50px 135px;
+                    }
+                }
+            }
+            .wp-block-gallery{
+                ul{
+                    flex-direction: row;
+                    li{
+                        margin: 0 25px 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    // TABLETTE LANDSCAPE
+    @media only screen and ( min-width: 1024px ) and ( min-height: 768px) {
+        #About{
+            height: 380px;
+            p{
+                margin-top: 75px;
+            }
+        }
+        #WhoLG{
+            h3{
+                margin-bottom: 50px;
+            }
+            .wp-block-media-text{
+                display: grid;
+                .wp-block-media-text__media{
+                    align-self: start;
+                }
+                .wp-block-media-text__content{
+                    padding: 0;
+                    padding-left: 30px;
+                    p{
+                        margin: 0 0 50px 0;
+                        text-align: left;
+                        padding-bottom: 0;
+                    }
+                    .wp-block-image{
+                        padding: 0;
+                        align-self: flex-start;
+                    }
+                }
+            }
+        }
+        #Business{
+            position: relative;
+            
+            .wp-block-media-text#reverse{
+                padding: 0 70px 75px;
+                .wp-block-media-text__content{
+                    padding: 0;
+                    padding-right: 30px;
+                }
+                .wp-block-media-text__media{
+                    grid-row: 1;
+                    padding:0;
+                }
+            }
+            .wp-block-media-text{
+                display:grid;
+                padding: 100px 70px 75px;
+                .wp-block-media-text__content{
+                    padding: 0;
+                    padding-left: 30px;
+                    p{
+                        text-align: left;
+                    }
+                }
+                .wp-block-media-text__media{
+                    align-self: start;
+                    padding: 0;
+                }
+            }
+            .container{
+                .swiper-container{
+                    background-image: -moz-linear-gradient( 90deg, rgb(24,24,24) 0%, rgb(33,33,33) 100%);
+                    background-image: -webkit-linear-gradient( 90deg, rgb(24,24,24) 0%, rgb(33,33,33) 100%);
+                    background-image: -ms-linear-gradient( 90deg, rgb(24,24,24) 0%, rgb(33,33,33) 100%);
+                    box-shadow: inset 8px 8px 16px #1c1c1c,
+                    inset -8px -8px 16px #262626;
+                    border-radius: 50px; 
+                    padding: 10px 25px;
+                    margin: 0;
+                    .swiper-wrapper{
+                            .swiper-slide{
+                                margin-bottom: 0;
+                                &:last-child{
+                                    .container-slide{
+                                        .contain-shadow{
+                                            img{
+                                                width: 80%;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                    }
+                }
+            }
+        }
+        #Coffee, #Premium{
+            .wp-block-media-text{
+                display: grid;
+                grid-template-columns: 40% 1fr;
+                .wp-block-media-text__content{
+                    padding: 0;
+                    padding-left: 30px;
+                    p{
+                        text-align: left;
+                    }
+                }
+                .wp-block-media-text__media{
+                    padding: 0 30px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        #Premium{
+            padding: 50px 70px 75px;
+            .wp-block-media-text{
+                &::before{
+                    height: 50px;
+                }
+            }
+            .wp-block-gallery{
+                .blocks-gallery-grid{
+                    flex-direction: row;
+                    li{
+                        margin: 0 50px 75px 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    // IPAD PRO
+    @media only screen and ( min-width: 1024px ) and ( min-height: 1300px) {
+        #WhoLG{
+            padding: 0 110px 75px;
+        }
+        #Business{
+            .wp-block-media-text#reverse{
+                padding: 0 110px 75px;
+            }
+            .wp-block-media-text{
+                padding: 75px 110px;
+            }
+        }
+        #Coffee, #Premium{
+           padding: 50px 110px 75px;
+           .wp-block-media-text{
+               .wp-block-media-text__media{
+                   padding: 0 15px;
+               }
+           }
+        }
+        #Premium{
+            .wp-block-media-text{
+                .wp-block-media-text__content{
+                    margin-bottom: 75px;
+                }
+                .wp-block-media-text__media{
+                    padding-top: 25%;
+                    align-self: flex-start;
+                    
+                }
+            }
+        }
+    }
+    // 1280px
+    @media only screen and ( min-width: 1280px ){
+        #About{
+            height: 500px;
+            padding: 75px 135px;
+        }
+        #WhoLG{
+            padding: 0 12% 75px;
+        }
+        #Business{ 
+            .wp-block-media-text#reverse{
+                padding: 0 12% 75px;
+                .wp-block-media-text__content{
+                    padding-right: 55px;
+                }
+            }
+            .container{
+                padding: 0 12%;
+            }
+            .wp-block-media-text{
+                padding: 75px 12%;
+                .wp-block-media-text__content{
+                    padding-left: 80px; 
+                }
+            }
+        }
+        #Coffee, #Premium{
+            padding: 75px 12%;
+            .wp-block-media-text{
+                .wp-block-media-text__media{
+                    padding: 0 60px;
+                }
+            }
+        }
+        #Premium{
+            .wp-block-media-text{
+                &::before{
+                    height: 57px;
+                }
+                .wp-block-media-text__content{
+                    margin-bottom: 75px;
+                }
+                .wp-block-media-text__media{
+                    padding-top: 0;
+                    align-self: flex-start;
+                    
+                }
+            }
+            p{
+                margin-bottom: 75px;
+            }
+        }
+    }
+    // MACBOOK + IPAD PRO LANDSCAPE
+    @media only screen and ( min-width: 1366px ) {
+        #About{
+            height: 560px;
+            padding: 100px
+        }
+        #WhoLG{
+            padding: 0 15% 100px;
+            h3{
+                margin-bottom: 75px;
+            }
+        }
+        #Business{
+            h3{
+                margin-bottom: 75px;
+            }
+            .wp-block-media-text#reverse{
+                padding: 0 15% 100px;
+            }
+            .wp-block-media-text{
+                padding: 100px 15%
+            }
+            .container{
+                padding: 0 15%;
+            }
+
+        }
+        #Coffee{
+            h3{
+                margin-bottom: 75px;
+            }
+        }
+        #Premium{
+            h3{
+                margin-bottom: 75px;
+            }
+        }
+    }
+    // 1920
+    @media only screen and (min-width: 1920px){
+        #About{
+            height: 70vh;
+        }
+        #WhoLG{
+            padding: 0 20% 100px;
+        }
+        #Business{
+            .wp-block-media-text#reverse{
+                padding: 0 20% 100px;
+            }
+            .wp-block-media-text{
+                padding: 100px 20% 100px;
+            }
+            .container{
+                padding: 0 20%;
+            }
+        }
+        #Coffee, #Premium{
+            padding: 50px 20% 120px;
+        }
+    }
+}

@@ -1,0 +1,1194 @@
+// sass --watch scss/home.scss:css/home.css --style compressed
+@import 'all/variable';
+.site-main-home{
+    position: relative;
+    z-index: 1;
+    h2 {
+        padding-top: 0px;
+    }
+    .banniere_header{
+        .hidden-title{
+            color: #181818;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .banniere{
+            position: relative;
+            z-index: 1;
+            .thumbnails{
+                background-size: 338%;
+            }
+            .menu-banniere{
+                display: none;
+            }
+            .button-mobile{
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                background: $red;
+                width: 100%;
+                border: none;
+                border-top-left-radius: 50px; 
+                border-top-right-radius: 50px; 
+                a{
+                    font-family: 'InriaSans';
+                    color: white;
+                    text-transform: uppercase;
+                    letter-spacing: 1.5px;
+                }
+            }      
+        }
+    }
+    .about{
+        background-image: url(../imgs/home/CAR_MOTO_INTRO.jpg);
+        padding: 50px 20px;
+        background-size: 600%;
+        h2{
+            position: relative;
+            padding-bottom: 215px;
+            padding-top: 0px;
+            &::before{
+                content: '';
+                background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+                position: absolute;
+                top: 50px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 9px;
+                width: 90px;
+            }
+            &::after{
+                content: '';
+                background-image: url(../icons/other/TUBE_LUEUR.png);
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 175px;
+                width: 50px;
+            }
+        }
+    }
+    .actuality{
+        h2{
+            position: relative;
+            padding-bottom: 25px;
+            text-align: center;
+            &::before{
+                content: '';
+                background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 9px;
+                width: 90px;
+            }
+        }
+        .swiper-actu{
+            padding-top: 20px;
+            padding-bottom: 30px;
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: block;
+                    .container-slide{
+                        padding: 0px 20px; 
+                        .contain-shadow{
+                            background: linear-gradient(145deg, #161616, #1a1a1a);
+                            box-shadow:  10px 16px 7px #161616,
+                                        -22px -10px 12px #1a1a1a;
+                            border-radius: 15px;
+                            
+                            .background-slide{
+                                height: 220px;
+                                width: 100%;
+                                border-top-left-radius: 15px;
+                                border-top-right-radius: 15px;
+                            }
+                            .contain-txt{
+                                padding: 25px 20px 30px;
+                                height: 347px;
+                                .title-concession{
+                                    font-family: 'InriaSansLight';
+                                    color: white;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1.3px;
+                                    font-weight: 400;
+                                    margin: 0 0 15px;
+                                    font-size: 1.00em;
+                                }
+                                .title-actu{
+                                    font-family: 'InriaSansBoldI';
+                                    text-transform: uppercase;
+                                    letter-spacing: 1.3px;
+                                    color: white;
+                                    margin: 0;
+                                    font-size: 1.25em;
+                                    line-height: 1.2;
+                                }
+                                p{
+                                    font-family: 'RobotoLight';
+                                    color: $grey;
+                                }
+                            }
+                        }
+                    }
+
+                      
+                }
+            }
+            .swiper-pagination-actu{
+                .swiper-pagination-bullet{
+                    border-radius: 15px;
+                    background: #0f0f10;
+                    box-shadow: inset 1px 1px 5px #060606,
+                                inset -1px -1px 5px #18181a;
+                    width: 10px;
+                    height: 10px;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 5px;
+                        width: 5px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        border-radius: 15px;
+                        background: linear-gradient(145deg, #ff3941, #db3037);
+                        box-shadow:  0px 0px 8px #611518,
+                                    -0px -0px 8px #ff5562;
+                    }
+                }
+            }
+            .swiper-button-next, .swiper-button-prev{
+                display: none;
+            }
+        }
+    }
+    .occasion{
+        position: relative;
+        margin-top: 30px;
+        background-image: url(../imgs/home/FOND_OCCASIONS.png);
+        background-size: 400%;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+        &::after{
+            content: "";
+            background-image: url(../icons/other/LIGHT_TOP.png);
+            background-repeat: no-repeat;
+            background-size: 135%;
+            background-position: center;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            height: 46px;
+            width: 100%;
+        }
+        h2{
+            padding-top: 125px;
+            position: relative;
+            padding-bottom: 25px;
+            text-align: center;
+            &::before{
+                content: '';
+                background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 9px;
+                width: 90px;
+            }
+        }
+        .pneu{
+            position: absolute;
+            background-image: url(../imgs/home/ROUE.png);
+            height: 120px;
+            width: 240px;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .swiper-occas{
+            padding-top: 20px;
+            padding-bottom: 40px;
+            .swiper-wrapper{
+                .swiper-slide{
+                    display: block;
+                    .container-slide{
+                        padding: 20px 20px; 
+                        .contain-shadow{
+                            background-image: url(../imgs/home/FOND-SLIDE-OCCASION.jpg);
+                            background-position: 50% -2px;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            box-shadow:  8px 12px 58px #161616;
+                            border-radius: 15px;
+                            padding: 20px 20px 35px;
+                            .thumbnails-voitures{
+                                height: 170px;
+                                background-position: center;
+                                background-size: 106%;
+                                background-repeat: no-repeat;
+                                box-shadow: 13px 20px 29px #161616;
+                            }
+                            .contain-txt{
+                                padding-top: 20px;
+                                ul{
+                                    margin: 0;
+                                    padding: 5px 15px;
+                                    border-radius: 15px;
+                                    box-shadow: inset 0px 0px 75px #292929,
+                                                inset 0px 0px 75px #292929;
+                                    li{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        padding: 10px 0px;
+                                        position: relative;
+                                        span{
+                                            color: white;
+                                            display: block;
+                                        }
+                                        .designation{
+                                            font-family: 'InriaSansLight';
+                                        }
+                                        .response{
+                                            font-family: 'InriaSansBold';
+                                        }
+                                        &::before {
+                                            background-color: rgba(80, 80, 80, 0.52);
+                                            content: "";
+                                            height: 1px;
+                                            left: 0;
+                                            position: absolute;
+                                            right: 0;
+                                            top: 0px;
+                                        }
+                                        &::after{
+                                            background-color: rgba(0, 0, 0, 0.60);
+                                            content: "";
+                                            height: 2px;
+                                            left: 0;
+                                            position: absolute;
+                                            right: 0;
+                                            top: -2px;
+                                        }
+                                        &:first-child{
+                                            &::before, &::after{
+                                                display: none;
+                                            }
+                                        }
+                                    }
+                                }
+                                h3{
+                                    font-family: 'InriaSansBold';
+                                    text-align: center;
+                                    color: white;
+                                    letter-spacing: 1.3px;
+                                    text-transform: uppercase;
+                                    margin: 20px auto 0px;
+                                    font-size: 1em;
+                                }
+                                h4{
+                                    color: #959595;
+                                    text-align: center;
+                                    font-family: 'InriaSans';
+                                    letter-spacing: 1.3px;
+                                    margin: 0;
+                                }
+                                .title-price{
+                                    color: $red;
+                                    margin-bottom: revert;
+                                    font-size: 1.5em;
+                                    margin: 15px auto;
+                                    span{
+                                        font-size: 0.5em;
+                                        position: relative;
+                                        top: -8px;
+                                    }
+                                }
+                            }
+                        }
+                    }                      
+                }
+            }
+            .swiper-pagination-occas{
+                bottom: 0px;
+                .swiper-pagination-bullet{
+                    border-radius: 15px;
+                    background: #0f0f10;
+                    box-shadow: inset 1px 1px 5px #060606,
+                                inset -1px -1px 5px #18181a;
+                    width: 10px;
+                    height: 10px;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    position: relative;
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        height: 5px;
+                        width: 5px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                        border-radius: 15px;
+                        background: linear-gradient(145deg, #ff3941, #db3037);
+                        box-shadow:  0px 0px 8px #611518,
+                                    -0px -0px 8px #ff5562;
+                    }
+                }
+            }
+        }
+        .button-plus{
+            display: flex;
+            color: white;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Roboto';
+            margin-top: 35px;
+            .arrows{
+                background-image: url(../icons/other/FLECHES_voir-plus.png);
+                width: 33px;
+                height: 14px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .faq{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        position: relative;  
+        h2{
+            position: relative;
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        input {
+            position: absolute;
+            opacity: 0;
+            z-index: -1;
+        }
+        .tabs {
+            overflow: hidden;
+            margin-top: 30px;
+            .tab {
+                color: #fff;
+                width: 100%;
+                overflow: hidden;
+                &-label {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 0px 1em;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 15px;
+                    background: #181818;
+                    box-shadow:  3px 7px 1px #151515,
+                                -3px -7px 9px #212121;
+                    width: calc(100% - 40px);
+                    height: 60px;
+                    font-family: 'Roboto';
+                    text-transform: uppercase;
+                    margin: 8px auto;
+                   
+                    &::after {
+                        content: "\276F";
+                        width: 1em;
+                        height: 1em;
+                        text-align: center;
+                        transition: all .100s;
+                        font-weight: 100;
+                    }
+                }
+                &-content {
+                    max-height: 0;
+                    padding: 0 1em;
+                    color: white;
+                    transition: all 0.8s;
+                    border-radius: 15px;
+                    background: #181818;
+                    box-shadow: inset 8px 8px 5px #161616,
+                                inset -5px -5px 4px #1a1a1a;
+                    width: calc(100% - 40px);
+                    margin: 0 auto;
+                    position: relative;
+                    top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                }
+                &-close {
+                    display: flex;
+                    justify-content: flex-end;
+                    padding: 1em;
+                    font-size: 0.75em;
+                    background: #404040;
+                    cursor: pointer;
+                    &:hover {
+                        background: #404040;
+                    }
+                }
+            }
+            // :checked
+            input:checked {
+                + .tab-label {
+                    &::after {
+                        transform: rotate(90deg);
+                        color: $red;
+                        border-radius: 74px;
+                        text-shadow:  0px 0px 7px #e51f2d,
+                                    -0px -0px 10px #ff2535;
+                    }
+                }
+                ~ .tab-content {
+                    max-height: 2500px;
+                    padding: 20px 20px 0px;
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .container-cat{
+            h3{
+                margin: 0;
+                color: $red;
+                font-family: 'Roboto';
+                font-size: 1.1em;
+                letter-spacing: 1.4px;
+            }
+            h2{
+                font-family: 'RobotoLight';
+                font-size: 1em;
+                letter-spacing: 1.3px;
+                text-transform: none;
+                text-align: left;
+                margin-top: 10px;
+                padding: 0;
+                line-height: 1.3;
+                font-family: 100;
+                &::before{
+                    display: none;
+                }
+            }
+            p{
+                margin-top: 10px;
+                color: #a0a0a0;
+                font-family: 'RobotoLight';
+                text-align: justify;
+                line-height: 1.3;
+                a{
+                    color: #ea0222;
+                }
+            }
+        }
+        .container-none{
+            order: 5;
+        }
+        .container-financement{
+            order: 3;
+        }
+        .container-commerce{
+            order: 1;
+        }
+        .container-sav{
+            order: 2;
+        }
+        .container-location{
+            order: 4;
+        }
+        .question{
+            text-align: center;
+            font-family: 'RobotoLightI';
+            letter-spacing: 1.3px;
+            margin-top: 30px;
+            padding-bottom: 15px;
+        }
+    }
+}
+
+// IPHONE
+@media only screen and ( min-width: 375px ) {
+    .site-main-home{
+        .about{
+            padding: 60px 20px;
+            background-size: 450%;
+            h2{
+                padding-bottom: 240px;
+            }
+        }
+        .actuality{
+            h2{
+                width: 75%;
+                margin: 0 auto;
+            }
+        }
+        .occasion{
+            margin-top: 40px;
+            padding-bottom: 60px;
+            h2{
+                padding-top: 145px;
+                width: 60%;
+                margin: 0 auto;
+                
+            }
+            .pneu{
+                height: 150px;
+                width: 290px;
+            }
+            .swiper-occas{
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .container-slide{
+                            .contain-shadow{
+                                .thumbnails-voitures{
+                                    height: 200px;
+                                }
+                            }
+                        }                      
+                    }
+                }
+            }
+        }
+        .faq{
+            padding-bottom: 60px;
+        }
+    }
+}
+
+// IPHONE LANDSCAPE
+@media only screen and ( min-width: 567px ) and ( max-height: 400px ) {
+    .site-main-home{
+        .about{
+            background-size: 215%;
+            padding: 60px;
+        }
+        .actuality{
+            h2{
+                width: 40%;
+            }
+        }
+        .occasion{
+            background-size: 245%;
+            h2{
+                width: 35%;
+            }
+            .swiper-occas{
+                padding-bottom: 60px;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .container-slide{
+                            padding: 0;
+                            .contain-shadow{
+                                .thumbnails-voitures{
+                                    height: 175px;
+                                }
+                            }
+                        }                      
+                    }
+                }
+            }
+            &::after{
+                background-size: 85%;
+            }
+        }
+        .faq{
+            .tabs{
+                .tab-label{
+                    width: calc(100% - 140px);
+                }
+                .tab-content{
+                    width: calc(100% - 140px);
+                }
+            }
+            &::after{
+                background-size: 85%;
+                bottom: -25px;
+            }
+        }
+    }
+} 
+
+// TABLETTE
+@media only screen and ( min-width: 768px ) and ( min-height: 600px) {
+    .site-main-home{
+        .banniere_header{
+            .banniere{
+                height: calc(100vh - 120px);
+                .button-mobile{
+                    padding: 1.5em 1em;
+                }
+            }
+        }
+        .about {
+            padding: 60px 135px;
+            background-size: 170%;
+        } 
+        .actuality{
+            h2{
+                width: 33%;
+            }
+            .swiper-actu{
+                padding-top: 20px;
+                padding-bottom: 50px;
+            }
+        }
+        .occasion{
+            background-size: 200%;
+            h2{
+                width: 25%;
+            }
+            .swiper-occas{
+                padding-bottom: 75px;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .container-slide{
+                            padding: 0;
+                            .contain-shadow{
+                                .thumbnails-voitures{
+                                    height: 240px;
+                                }
+                            }
+                        }                      
+                    }
+                }
+            }
+            &::after{
+                background-size: 100%;
+            }
+        }
+        .faq{
+            .tabs{
+                .tab-label{
+                    width: calc(100% - 270px);
+                }
+                .tab-content{
+                    width: calc(100% - 270px);
+                }
+            }
+            &::after{
+                background-size: 100%;
+                bottom: -25px;
+            }
+        }
+    } 
+}
+
+// TABLETTE LANDSCAPE
+@media only screen and ( min-width: 1024px ) and ( min-height: 768px) {
+    .site-main-home{
+        .banniere_header{
+            .banniere{
+                .thumbnails{
+                    background-size: 140%;
+                }
+            }
+        }
+        .about{
+            background-size: 120%;
+            .wp-block-buttons.is-content-justification-center {
+                padding-top: 20px;
+            }
+        }
+        .actuality{
+            h2{
+                width: auto;
+            }
+        }
+        .occasion{
+            margin-top: 70px;
+            padding-bottom: 110px;
+            background-size: 100%;
+            h2{
+                width: auto;
+            }
+            .swiper-occas{
+                background-size: 170%;
+                padding-top: 60px;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        .container-slide{
+                            padding: 0;
+                            .contain-shadow{
+                                padding: 30px 30px 45px;
+                                .thumbnails-voitures{
+                                    height: 320px;
+                                }
+                            }
+                        }                      
+                    }
+                }
+            }
+            &::after{
+                background-size: 30%;
+            }
+        }
+        .faq{
+            padding-top: 70px;
+            .tabs{
+                padding-top : 30px;
+                .tab-label{
+                    width: 500px;
+                }
+                .tab-content{
+                    width: 500px;
+                }
+            }
+            .moto{
+                position: absolute;
+                height: 400px;
+                width: 215px;
+                top: 60px;
+                left: 0;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../imgs/home/ARRIÈRE_MOTO.jpg);
+            }
+            .cars{
+                position: absolute;
+                height: 350px;
+                width: 215px;
+                top: 60px;
+                right: 0;
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-image: url(../imgs/home/FEUX_ARRIERE.jpg);
+            }
+            .flex{
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                margin-top: 50px;
+                .button-actu-red{
+                    margin: 0;
+                }
+            }
+            .question{
+                margin: 0 20px 0 0;
+                text-align: unset;
+            }
+        }
+    }
+}
+
+// IPAD PRO
+@media only screen and ( min-width: 1024px ) and ( min-height: 1300px) {
+    .site-main-home{
+        .occasion {
+            background-size: 100%;
+        }
+        .banniere_header{
+            .banniere{
+                .thumbnails{
+                    background-size: 270%;
+                }
+            }
+        }
+    }
+}
+
+// ECRAN 720P
+@media only screen and ( min-width: 1280px ) {
+    .site-main-home{
+        #Actuality .swiper-actu {
+            margin-bottom: 0px;
+        }
+        .banniere_header{
+            .banniere{
+                max-height: calc(100vh - 170px);
+                overflow: hidden;
+                video{
+                    width: 100%;
+                }
+                .menu-banniere{
+                    display: block;
+                    position: absolute;
+                    bottom: 5vh;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 80%;
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                        display: none;
+                    }
+                    .first-level{
+                        display: flex;
+                        li{
+                            background: #720109;
+                            width: calc(100% / 8);
+                            padding: 10px 0px;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            margin-left: 3px;
+                            cursor: pointer;
+                            transition: all 0.5s;
+                            &:hover{
+                                background: #b6121d;
+                                transition: all 0.5s;
+                            }
+                            span, a{
+                                font-family: 'InriaSansBold';
+                                text-transform: uppercase;
+                                color: white;
+                                font-size: 13px;
+                                text-align: center;
+                                display: block;
+                            }
+                            .icons{
+                                height: 40px;
+                                margin: 5px;
+                                &.icon-car{
+                                    background-image: url(../icons/menu/VOITURES.png);
+                                }
+                                &.icon-vans{
+                                    background-image: url(../icons/menu/UTILITAIRES.png);
+                                }
+                                &.icon-truck{
+                                    background-image: url(../icons/menu/CAMIONS.png);
+                                }
+                                &.icon-moto{
+                                    background-image: url(../icons/menu/MOTOS.png);
+                                }
+                                &.icon-key{
+                                    background-image: url(../icons/menu/atelier.png);
+                                }
+                                &.icon-piece{
+                                    background-image: url(../icons/menu/pieces\ et\ accessoires.png);
+                                }
+                                &.icon-rent{
+                                    background-image: url(../icons/menu/LOCATION.png);
+                                }
+                                &.icon-wheel{
+                                    background-image: url(../icons/menu/OCCASIONS.png);
+                                }
+                            }
+                            &:first-child{
+                                border-bottom-left-radius: 50px;
+                                border-top-left-radius: 50px;
+                                margin-left: 0;
+                            }
+                            &:last-child{
+                                border-bottom-right-radius: 50px;
+                                border-top-right-radius: 50px;
+                            }
+                        }
+                        .hover{
+                            position: relative;
+                            .menu-hover{
+                                align-items: center;
+                                flex-direction: column;
+                                content: 'coucou';
+                                flex-wrap: nowrap;
+                                height: auto;
+                                justify-content: space-around;
+                                position: absolute;
+                                bottom: 60px;
+                                padding-bottom: 60px;
+                                transition: transform 0.5s;
+                                z-index: -1;
+                                max-height: unset;
+                                width: 100%;
+                                background: rgba(0, 0, 0, 0.60);
+                                li{
+                                    width: 100%;
+                                    background: transparent;
+                                    padding: 0px;
+                                    margin-left: 0px;
+                                    &:first-child{
+                                        border-bottom-left-radius: 0px;
+                                        border-top-left-radius: 0px;
+                                    }
+                                    &:last-child{
+                                        border-bottom-right-radius: 0px;
+                                        border-top-right-radius: 0px;
+                                        a{
+                                            &::after{
+                                                content: none;
+                                            }
+                                        }
+                                    }
+                                    a{
+                                        height: 45px;
+                                        display: flex;
+                                        flex-direction: column;
+                                        justify-content: center;
+                                        position: relative;
+                                        &::after{
+                                            content: "";
+                                            position: absolute;
+                                            background: #ffffff5e;
+                                            bottom: 0;
+                                            left: 50%;
+                                            transform: translateX(-50%);
+                                            height: 1px;
+                                            width: 70%;
+                                        }
+                                        .icon-mercedes{
+                                            background-image: url(../icons/mark/mercedes.png);
+                                            height: 22px;
+                                        }
+                                        .icon-smart{
+                                            background-image: url(../icons/mark/smart.png);
+                                        }
+                                        .icon-jeep{
+                                            background-image: url(../icons/mark/jeep.png);
+                                            height: 18px;
+                                        }
+                                        .icon-omniplus{
+                                            background-image: url(../icons/mark/omniplus.png);
+                                            height: 15px;
+                                        }
+                                        .icon-unimog{
+                                            background-image: url(../icons/mark/unimog.png);
+                                            height: 9px;
+                                        }
+                                        .icon-yamaha{
+                                            background-image: url(../icons/mark/yamaha.png);
+                                            height: 15px;
+                                        }
+                                        .icon-indian{
+                                            background-image: url(../icons/mark/Indian.png);
+                                            height: 18px;
+                                        }
+                                    }
+                                    &:hover{
+                                        background: rgba(0, 0, 0, 0.60);
+                                    }
+                                }
+                            }
+                            &:hover{
+                                a{
+                                    transition: all 0.5s;
+                                    &:hover{
+                                        transition: all 0.3s;
+                                    }
+                                }
+                                .menu-hover{
+                                    transition: all 0.5s ease-in-out;
+                                    display: flex;
+                                }
+                            }
+                        }
+                    }
+                }
+                .button-mobile{
+                    display: none;
+                }
+            }
+        } 
+        .about{
+            padding: 90px 350px;
+            background-size: 100%;
+        }
+        .actuality{
+            padding: 0px 80px;
+            .swiper-actu{
+                overflow: initial;
+                #WrapperContainer { 
+                    overflow: hidden;
+                    width: calc(95% - 100px) !important;
+                    .swiper-wrapper{
+                        .swiper-slide{
+                            .container-slide{
+                                .contain-shadow{
+                                    box-shadow: 10px 16px 7px #161616, -5px -10px 12px #1a1a1a;
+                                }
+                            } 
+                        } 
+                    }
+                }
+                .swiper-button-next, .swiper-button-prev { 
+                    display: block;
+                    margin-right: 0px !important;
+                    margin-left: 0px !important;                     
+                    &:after {
+                        font-size: 20px;
+                        color: #c3bebe;
+                        border-radius: 10px;
+                        display: flex;
+                        height: 40px;
+                        width: 40px;
+                        align-items: center;
+                        justify-content: center;
+                        background: #181818;
+                        box-shadow: 3px 7px 1px #151515, -3px -7px 9px #212121;
+          
+                    }
+               
+                } 
+            } 
+        }
+        .faq {
+            .moto {
+                height: 800px;
+                width: 280px;
+            }
+            .cars {
+                height: 800px;
+                width: 280px;
+            }
+            .flex {
+                .question {
+                    padding-bottom: 0;
+                }
+                align-items: center !important;
+                flex-direction: row;
+            }
+            .tabs {
+                .tab-label {
+                    width: 40%;
+                }
+                .tab-content {
+                    width: 40%;
+                } 
+            } 
+        }
+        .occasion .swiper-occas .swiper-wrapper .swiper-slide .container-slide .contain-shadow {
+        display: flex;
+        flex-wrap: wrap;
+            .thumbnails-voitures {
+                width: 50%;
+                height: 258px;
+                background-size: 137%;
+                background-position: left center;
+                z-index: 1;
+            }
+            & div:nth-child(2) {
+                padding-top: 0;
+                height: 250px;
+                width: 48%;
+                padding-left: 2% ;
+                ul {
+                    height: 100%;
+ 
+                }
+            }
+            .contain-txt {
+                h3 {
+                    text-align: left;
+                    font-size: 25px;
+                    &.title-price{
+                        font-size: 35px;
+                        margin: 0px;
+                    }
+                }
+                h4{
+                    text-align: left;
+                    font-size: 21px;
+                }
+            }
+            & div:nth-child(3) {
+                width: 50%;
+                padding-top: 0;
+            }
+            & div:nth-child(4) {
+                width: 50%;
+                padding-top: 0;
+                justify-content: flex-end;
+                align-items: flex-end;
+                display: flex;
+                .button-actu-red {
+                    margin: 0px;
+                }
+            }
+
+        }
+    } 
+}
+
+// MACBOOK + IPAD PRO LANDSCAPE
+// @media only screen and ( min-width: 1366px ) {}
+
+// ECRAN PC PORTABLE
+@media only screen and ( min-width: 1440px ) {
+    .site-main-home .banniere_header .banniere .menu-banniere {
+        width: 70%;
+    }
+    #colophon.site-footer .site-info .col-4 .container-rs .contain-rs {
+        width: 54%;
+    }
+}
+
+// ECRAN CLASSIC 1080P
+@media only screen and ( min-width: 1920px ) {
+    #colophon.site-footer .site-info .col-4 .container-rs .contain-rs {
+        width: 40%;
+    }
+    .site-main-home {
+        .faq {
+            .moto {
+                height: 800px;
+                width: 370px;
+            }
+            .cars {
+                height: 800px;
+                width: 370px;
+            }
+        }
+        .banniere_header .banniere .menu-banniere {
+        .first-level {
+            li .icons {
+            height: 40px;  
+            }
+            .hover {
+            height: 120px;
+        }
+    }
+        width: 60%;
+    }
+}
+    
+    
+    .swiper-container-3d .swiper-slide-shadow-left, .swiper-slide-shadow-right {
+        width: auto;
+    }
+    .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top {
+        height: auto;
+    }
+    .swiper-container-3d .swiper-slide-shadow-bottom, .swiper-container-3d .swiper-slide-shadow-left, .swiper-container-3d .swiper-slide-shadow-right, .swiper-container-3d .swiper-slide-shadow-top {
+        height: auto !important;
+    }
+    .site-main-home { 
+        .occasion {
+            .swiper-occas { 
+                .swiper-wrapper {
+                    .swiper-slide { 
+                        .container-slide {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    .contain-shadow {
+                                    width: 570px;                                                                   
+                                }
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+}
+
+// ECRAN MAC RETINA
+// @media only screen and ( min-width: 2560px ) {}
