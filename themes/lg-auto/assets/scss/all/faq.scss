@@ -1,0 +1,505 @@
+// sass --watch scss/all/faq.scss:css/faq.css --style compressed
+@import "variable";
+#TabsContainer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    h2{
+        position: relative;
+        padding-bottom: 25px;
+        text-align: center;
+        &::before{
+            content: '';
+            background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 9px;
+            width: 90px;
+        }
+    }
+    input[type=checkbox] {
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    .tabs {
+        overflow: hidden;
+        margin-top: 30px;
+        .tab {
+            h5{
+                text-transform: uppercase;
+                color: $grey;
+                font-family: "InriaSansLight";
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+            p{
+                padding: 0;
+            }
+            select{
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 10px;
+                background-color: $black;
+                color: #fff;
+                box-shadow:  3px 7px 1px #151515,
+                            -3px -7px 9px #212121;
+                border-color: $black; 
+            }
+            input[type="text"], input[type="email"], input[type="tel"], textarea{
+                width: 100%;
+                padding: 10px;
+                margin: 5px 0;
+                border-radius: 10px;
+                background-color: #1f1f1f;
+                color: #fff;
+                box-shadow: inset -13px -13px 34px  #242424,
+                            inset 5px 5px 39px #1a1a1a;
+                border-color: $black; 
+                &::placeholder{
+                    font-style: italic;
+                }
+            }
+            input[type="file"]{
+                display:none;
+
+            }
+            #submitForm{
+                color: #fff;
+                font-family: "InriaSans";
+                position: relative;
+                font-family: 'InriaSans';
+                letter-spacing: 1.3px;
+                font-size: 18px;
+                &::before{
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    right: 0px;
+                    bottom: 0px;
+                    display: block;
+                    border-radius: 15px;
+                    background-color: #101010;
+                    background-image: linear-gradient(to right, #f92231 0%, #101010 50%, #f92231 100%);
+                    background-size: 200%;
+                    background-repeat: no-repeat;
+                    transition: all 0.5s ease-in-out;
+                    content: '';
+                    z-index: -2;
+                }
+                &::after{
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    right: 2px;
+                    bottom: 2px;
+                    display: block;
+                    border-radius: 15px;
+                    background: #181818;
+                    content: '';
+                    z-index: -1;
+                }
+            }
+            .label-fileform{
+                cursor: pointer;
+                position: relative;
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border-radius: 10px;
+                background-color: $black;
+                color: #fff;
+                box-shadow:  3px 7px 1px #151515,
+                            -3px -7px 9px #212121;
+                border-color: $black;
+                display: flex;
+                padding-left: 15px;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    background: url(../icons/other/download.png);
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    width: 20px;
+                    height: 20px; 
+                    // background-color: red;
+                    top: 25%;
+                    left: calc(100% - 40px)
+                }
+            }
+            #personalInformation{
+                h5{
+                    color: #fff;
+                }
+            }
+            .description{
+                font-style: italic;
+                color: $grey;
+            }
+            #TypeVehicule{
+                p{
+                    .typeVehicule{
+                        .wpcf7-radio{
+                            display: flex;
+                            flex-wrap: wrap;
+                            justify-content: space-between;
+                            .wpcf7-list-item{
+                                text-align: center;
+                                position: relative;
+                                width: 35%;
+                                label{
+                                    label{
+                                        &:before{
+                                            content:'';
+                                            position: absolute;
+                                            top: 30%;
+                                            left: 0;
+                                            border-radius: 15px;
+                                            background: #0f0f10;
+                                            box-shadow: inset 1px 1px 5px #060606,
+                                                        inset -1px -1px 5px #18181a;
+                                            width: 10px;
+                                            height: 10px;
+                                            opacity: 1;
+                                        }
+                                    }
+                                    input[type="radio"]:checked + label:before{
+                                        height: 10px;
+                                        width: 10px;
+                                        border-radius: 15px;
+                                        background: linear-gradient(145deg, #ff3941, #db3037);
+                                        box-shadow:  0px 0px 8px #611518,
+                                                    -0px -0px 8px #ff5562;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #Atelier{
+                .typeDemande{
+                    #DemandeForm{
+                        display: flex;
+                        flex-direction: column;
+                        .wpcf7-list-item{
+                            margin-bottom: 5px;
+                            margin-left: 24px;
+                            position: relative;
+                            label{
+                                label{
+                                    &:before{
+                                        content:'';
+                                        position: absolute;
+                                        top: 30%;
+                                        left: -20px;
+                                        border-radius: 15px;
+                                        background: #0f0f10;
+                                        box-shadow: inset 1px 1px 5px #060606,
+                                                    inset -1px -1px 5px #18181a;
+                                        width: 10px;
+                                        height: 10px;
+                                        opacity: 1;
+                                    }
+                                }
+                                input[type="radio"]:checked + label:before{
+                                    height: 10px;
+                                    width: 10px;
+                                    border-radius: 15px;
+                                    background: linear-gradient(145deg, #ff3941, #db3037);
+                                    box-shadow:  0px 0px 8px #611518,
+                                                -0px -0px 8px #ff5562;
+                                }
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            #DesiredVehicule{
+               .DesiredVehicule{
+                   #DesiredVehiculeForm{
+                    display: flex;
+                    flex-direction: column;
+                    .wpcf7-list-item{
+                        margin-bottom: 5px;
+                        margin-left: 24px;
+                        position: relative;
+                        label{
+                            label{
+                                &:before{
+                                    content:'';
+                                    position: absolute;
+                                    top: 30%;
+                                    left: -20px;
+                                    border-radius: 15px;
+                                    background: #0f0f10;
+                                    box-shadow: inset 1px 1px 5px #060606,
+                                                inset -1px -1px 5px #18181a;
+                                    width: 10px;
+                                    height: 10px;
+                                    opacity: 1;
+                                }
+                            }
+                            input[type="radio"]:checked + label:before{
+                                height: 10px;
+                                width: 10px;
+                                border-radius: 15px;
+                                background: linear-gradient(145deg, #ff3941, #db3037);
+                                box-shadow:  0px 0px 8px #611518,
+                                            -0px -0px 8px #ff5562;
+                            }
+                        }
+                        &:last-child{
+                            margin-bottom: 0;
+                        }
+                    }
+                   }
+               } 
+            }
+            #Magasin{
+                .magasin{
+                    #magasinForm{
+                        display: flex;
+                        flex-direction: column;
+                        .wpcf7-list-item{
+                            margin-bottom: 5px;
+                            margin-left: 24px;
+                            position: relative;
+                            label{
+                                label{
+                                    &:before{
+                                        content:'';
+                                        position: absolute;
+                                        top: 30%;
+                                        left: -20px;
+                                        border-radius: 15px;
+                                        background: #0f0f10;
+                                        box-shadow: inset 1px 1px 5px #060606,
+                                                    inset -1px -1px 5px #18181a;
+                                        width: 10px;
+                                        height: 10px;
+                                        opacity: 1;
+                                    }
+                                }
+                                input[type="radio"]:checked + label:before{
+                                    height: 10px;
+                                    width: 10px;
+                                    border-radius: 15px;
+                                    background: linear-gradient(145deg, #ff3941, #db3037);
+                                    box-shadow:  0px 0px 8px #611518,
+                                                -0px -0px 8px #ff5562;
+                                }
+                            }
+                            &:last-child{
+                                margin-bottom: 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .wpcf7-list-item{
+                margin: 0;
+            }
+            color: #fff;
+            width: 100%;
+            overflow: hidden;
+            &-label {
+                display: flex;
+                justify-content: space-between;
+                padding: 0px 1em;
+                align-items: center;
+                cursor: pointer;
+                border-radius: 15px;
+                background: #181818;
+                box-shadow:  3px 7px 1px #151515,
+                            -3px -7px 9px #212121;
+                width: calc(100% - 40px);
+                height: 60px;
+                font-family: 'Roboto';
+                text-transform: uppercase;
+                margin: 8px auto;
+               
+                &::after {
+                    content: "\276F";
+                    width: 1em;
+                    height: 1em;
+                    text-align: center;
+                    transition: all .100s;
+                    font-weight: 100;
+                }
+            }
+            &-content {
+                max-height: 0;
+                padding: 0 1em;
+                color: white;
+                transition: all 0.8s;
+                width: calc(100% - 40px);
+                margin: 0 auto;
+                position: relative;
+                top: 10px;
+                display: flex;
+                flex-direction: column;
+            }
+            &-close {
+                display: flex;
+                justify-content: flex-end;
+                padding: 1em;
+                font-size: 0.75em;
+                background: #404040;
+                cursor: pointer;
+                &:hover {
+                    background: #404040;
+                }
+            }
+        }
+        // :checked
+        input:checked {
+            + .tab-label {
+                color: red;
+                &::after {
+                    transform: rotate(90deg);
+                    color: $red;
+                    border-radius: 74px;
+                    text-shadow:  0px 0px 7px #e51f2d,
+                                -0px -0px 10px #ff2535;
+                }
+            }
+            ~ .tab-content {
+                max-height: 2500px;
+                padding: 0;
+                margin-bottom: 25px;
+            }
+        }
+    }
+    
+}
+@media only screen and (min-width: 375px){
+    #TabsContainer{
+        padding-bottom: 60px;
+    }
+}
+@media only screen and ( min-width: 567px ) and ( max-height: 400px ){
+    #TabsContainer{
+        .tabs{
+            .tab-label{
+                width: calc(100% - 140px);
+            }
+            .tab-content{
+                width: calc(100% - 140px);
+            }
+        }
+        &::after{
+            background-size: 85%;
+            bottom: -25px;
+        }
+    }
+}
+@media only screen and ( min-width: 768px ) and ( min-height: 600px) {
+    #TabsContainer{
+        .tabs{
+            .tab-label{
+                width: calc(100% - 270px);
+            }
+            .tab-content{
+                width: calc(100% - 270px);
+            }
+        }
+        &::after{
+            background-size: 100%;
+            bottom: -25px;
+        }
+    }
+}
+@media only screen and ( min-width: 1024px ) and ( min-height: 768px) {
+    #TabsContainer{
+        padding-top: 70px;
+        .tabs{
+            .tab-label{
+                width: 500px;
+            }
+            .tab-content{
+                width: 65%;
+            }
+        }
+        &::after{
+            background-size: 30%;
+        }
+        .moto{
+            position: absolute;
+            height: 400px;
+            width: 215px;
+            top: 60px;
+            left: 0;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../imgs/home/ARRIÈRE_MOTO.jpg);
+        }
+        .cars{
+            position: absolute;
+            height: 350px;
+            width: 215px;
+            top: 60px;
+            right: 0;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url(../imgs/home/FEUX_ARRIERE.jpg);
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            margin-top: 50px;
+            .button-actu-red{
+                margin: 0;
+            }
+        }
+        .question{
+            margin: 0 20px 0 0;
+            text-align: unset;
+        }
+    }
+}
+
+@media only screen and ( min-width: 1280px ) {
+    #TabsContainer{
+        .tabs{
+            .tab{
+                .tab-content{
+                    form{
+                        .columns{
+                            display: flex;
+                            justify-content: space-around;
+                            .column{
+                                width: 45%;
+                                h5{
+                                    position: relative;
+                                    &::before{
+                                        content:'';
+                                        position: absolute;
+                                        bottom:-10px;
+                                        left:0;
+                                        width:100%;
+                                        height:2px;
+                                        background:#323237;
+                                        box-shadow: 2px 10px 0px -5px rgba(50,50,55,1);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

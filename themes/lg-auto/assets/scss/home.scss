@@ -3,9 +3,6 @@
 .site-main-home{
     position: relative;
     z-index: 1;
-    h2 {
-        padding-top: 0px;
-    }
     .banniere_header{
         .hidden-title{
             color: #181818;
@@ -47,12 +44,11 @@
         h2{
             position: relative;
             padding-bottom: 215px;
-            padding-top: 0px;
             &::before{
                 content: '';
                 background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
                 position: absolute;
-                top: 50px;
+                top: 55px;
                 left: 50%;
                 transform: translateX(-50%);
                 background-size: contain;
@@ -85,7 +81,7 @@
                 content: '';
                 background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
                 position: absolute;
-                bottom: 0;
+                bottom: 0px;
                 left: 50%;
                 transform: translateX(-50%);
                 background-size: contain;
@@ -96,8 +92,8 @@
             }
         }
         .swiper-actu{
-            padding-top: 20px;
-            padding-bottom: 30px;
+            padding-top: 30px;
+            padding-bottom: 65px;
             .swiper-wrapper{
                 .swiper-slide{
                     display: block;
@@ -229,7 +225,7 @@
             transform: translateX(-50%);
         }
         .swiper-occas{
-            padding-top: 20px;
+            padding-top: 30px;
             padding-bottom: 40px;
             .swiper-wrapper{
                 .swiper-slide{
@@ -249,7 +245,7 @@
                                 background-position: center;
                                 background-size: 106%;
                                 background-repeat: no-repeat;
-                                box-shadow: 13px 20px 29px #161616;
+                                box-shadow:  5px 7px 20px #161616;
                             }
                             .contain-txt{
                                 padding-top: 20px;
@@ -378,11 +374,37 @@
     .faq{
         padding-top: 50px;
         padding-bottom: 50px;
-        position: relative;  
+        position: relative;
+        &::after{
+            content: "";
+            background-image: url(../icons/other/LIGHT_TOP.png);
+            background-repeat: no-repeat;
+            background-size: 135%;
+            background-position: center;
+            bottom: -22px;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            height: 46px;
+            width: 100%;
+        }
         h2{
             position: relative;
             padding-bottom: 25px;
             text-align: center;
+            &::before{
+                content: '';
+                background-image: url(../icons/other/UNDERLIGHT_TITRES.png);
+                position: absolute;
+                bottom: 0px;
+                left: 50%;
+                transform: translateX(-50%);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 9px;
+                width: 90px;
+            }
         }
         input {
             position: absolute;
@@ -647,8 +669,8 @@
                 width: 33%;
             }
             .swiper-actu{
-                padding-top: 20px;
-                padding-bottom: 50px;
+                padding-top: 40px;
+                padding-bottom: 80px;
             }
         }
         .occasion{
@@ -704,9 +726,6 @@
         }
         .about{
             background-size: 120%;
-            .wp-block-buttons.is-content-justification-center {
-                padding-top: 20px;
-            }
         }
         .actuality{
             h2{
@@ -715,14 +734,13 @@
         }
         .occasion{
             margin-top: 70px;
-            padding-bottom: 110px;
+            padding-bottom: 80px;
             background-size: 100%;
             h2{
                 width: auto;
             }
             .swiper-occas{
                 background-size: 170%;
-                padding-top: 60px;
                 .swiper-wrapper{
                     .swiper-slide{
                         .container-slide{
@@ -744,13 +762,15 @@
         .faq{
             padding-top: 70px;
             .tabs{
-                padding-top : 30px;
                 .tab-label{
                     width: 500px;
                 }
                 .tab-content{
                     width: 500px;
                 }
+            }
+            &::after{
+                background-size: 30%;
             }
             .moto{
                 position: absolute;
@@ -810,9 +830,6 @@
 // ECRAN 720P
 @media only screen and ( min-width: 1280px ) {
     .site-main-home{
-        #Actuality .swiper-actu {
-            margin-bottom: 0px;
-        }
         .banniere_header{
             .banniere{
                 max-height: calc(100vh - 170px);
@@ -999,7 +1016,7 @@
             }
         } 
         .about{
-            padding: 90px 350px;
+            padding: 90px 230px;
             background-size: 100%;
         }
         .actuality{
@@ -1008,7 +1025,7 @@
                 overflow: initial;
                 #WrapperContainer { 
                     overflow: hidden;
-                    width: calc(95% - 100px) !important;
+                    width: 90%;
                     .swiper-wrapper{
                         .swiper-slide{
                             .container-slide{
@@ -1020,9 +1037,7 @@
                     }
                 }
                 .swiper-button-next, .swiper-button-prev { 
-                    display: block;
-                    margin-right: 0px !important;
-                    margin-left: 0px !important;                     
+                    display: block;                   
                     &:after {
                         font-size: 20px;
                         color: #c3bebe;
@@ -1043,43 +1058,26 @@
         .faq {
             .moto {
                 height: 800px;
-                width: 280px;
+                width: 370px;
             }
             .cars {
                 height: 800px;
-                width: 280px;
+                width: 370px;
             }
-            .flex {
-                .question {
-                    padding-bottom: 0;
-                }
-                align-items: center !important;
-                flex-direction: row;
-            }
-            .tabs {
-                .tab-label {
-                    width: 40%;
-                }
-                .tab-content {
-                    width: 40%;
-                } 
-            } 
         }
         .occasion .swiper-occas .swiper-wrapper .swiper-slide .container-slide .contain-shadow {
         display: flex;
         flex-wrap: wrap;
             .thumbnails-voitures {
                 width: 50%;
-                height: 258px;
-                background-size: 137%;
-                background-position: left center;
+                height: 250px;
+                background-size: cover;
                 z-index: 1;
             }
             & div:nth-child(2) {
                 padding-top: 0;
                 height: 250px;
-                width: 48%;
-                padding-left: 2% ;
+                width: 50%;
                 ul {
                     height: 100%;
  
@@ -1126,28 +1124,11 @@
     .site-main-home .banniere_header .banniere .menu-banniere {
         width: 70%;
     }
-    #colophon.site-footer .site-info .col-4 .container-rs .contain-rs {
-        width: 54%;
-    }
 }
 
 // ECRAN CLASSIC 1080P
 @media only screen and ( min-width: 1920px ) {
-    #colophon.site-footer .site-info .col-4 .container-rs .contain-rs {
-        width: 40%;
-    }
-    .site-main-home {
-        .faq {
-            .moto {
-                height: 800px;
-                width: 370px;
-            }
-            .cars {
-                height: 800px;
-                width: 370px;
-            }
-        }
-        .banniere_header .banniere .menu-banniere {
+    .site-main-home .banniere_header .banniere .menu-banniere {
         .first-level {
             li .icons {
             height: 40px;  
@@ -1158,8 +1139,6 @@
     }
         width: 60%;
     }
-}
-    
     
     .swiper-container-3d .swiper-slide-shadow-left, .swiper-slide-shadow-right {
         width: auto;

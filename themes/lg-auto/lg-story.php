@@ -8,7 +8,7 @@ get_header();
 
 ?>
 	<main id="Story" class="site-main site-main-story">
-	<div class="swiper-container-parent test" style = " background : url('<?= get_template_directory_uri() . '/assets/imgs/lg_group/background-lg-story.jpg'?> );" >
+	<div class="swiper-container-parent"style = "background : url('<?= get_template_directory_uri() . '/assets/imgs/lg_group/background-lg-story.jpg' ?> ); " >
 		<div class="swiper-container" id='story-swip' >
 			<div class="swiper-wrapper">
 				<div class="swiper-slide" data-id="1989" >
