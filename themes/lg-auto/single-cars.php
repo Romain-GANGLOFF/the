@@ -8,11 +8,6 @@ $special = isset($meta['special'][0]) ? $meta['special'][0] : "0"; // Si $meta n
     <main id="primary" class="site-main car-<?= $post->post_name ?>">
 		<section id="Banniere_header" class="banniere_header">
 			<div class="banniere">
-				<div class="logocontainer">
-					<div class="logobrand"></div>
-					<div class="logolg"></div>
-					<div class="logofuso"></div>
-				</div>
 				<?php if(!wp_is_mobile() && $movie) : ?> 
 					<video poster="<?= $thumbnail ?>" muted loop autoplay  src="<?= $movie; ?>"></video> 	
 				<?php else : ?>
@@ -21,6 +16,7 @@ $special = isset($meta['special'][0]) ? $meta['special'][0] : "0"; // Si $meta n
 			</div>
 		</section>
 		<?php the_content() ?>
+		<?= do_shortcode("[contact_lg]") ?>
 	</main><!-- #main -->
 	<?php
 		if($special == "0") : ?>
